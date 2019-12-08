@@ -7,3 +7,5 @@
 4. use IntelliJ to open it, will convert to new project
    file format
    
+## IntelliJ tips
+1. setting/editor/general, may enable editor zoom by Ctrl-<mouse wheel>
