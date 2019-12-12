@@ -8,4 +8,9 @@
    file format
    
 ## IntelliJ tips
-1. setting/editor/general, may enable editor zoom by Ctrl-<mouse wheel>
+1. setting/editor/general, may enable editor zoom by Ctrl 
+    and mouse wheel
+2. select React part, right click, choose Refactor then
+    Function (or Ctrl-Alt-M), type in name (ex: handUI)
+    , choose Rbuilder. This is how to convert UI to
+    function
