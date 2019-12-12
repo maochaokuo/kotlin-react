@@ -1,23 +1,14 @@
 package index
 
-import kotlinx.html.style
-import kotlinx.html.title
-import react.RBuilder
+import app.*
+import kotlinext.js.*
 import react.dom.*
 import kotlin.browser.*
-import kotlin.js.*
-import kotlin.js.js as js1
-import bj.*
 
 fun main(args: Array<String>) {
-    val rootDiv = document.getElementById("root")
+    requireAll(require.context("src", true, js("/\\.css$/")))
 
-    render(rootDiv) {
-        gameUI()
+    render(document.getElementById("root")) {
+        app()
     }
-    /*
-                attrs.style = js1 {
-                    display = "flex"
-                }
-     */
 }
