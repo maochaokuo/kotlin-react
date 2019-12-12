@@ -1,5 +1,10 @@
 # Kotlin React example
 
+## update 12/12
+1. yarn create react-kotlin-app <my-app> (ex: kotlin-react)
+   it is better than create-react-kotlin-app (more up to date)
+2. 
+
 ## create-react-kotlin-app 
 1. create-react-kotlin-app <my-app> (ex: kotlin-react)
 2. must install JDK 8
