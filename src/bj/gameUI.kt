@@ -11,7 +11,7 @@ import react.dom.div
 import react.dom.h1
 import kotlin.js.js as js1
 
-fun RBuilder.gameUI() {
+fun RBuilder.gameUI(g: Game ) {
     div {
         h1 { +"Blackjack" }
         div {

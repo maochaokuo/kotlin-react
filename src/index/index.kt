@@ -12,11 +12,19 @@ import kotlin.browser.*
 import bj.*
 
 fun main(args: Array<String>) {
-    requireAll(require.context("src", true, js("/\\.css$/")))
+//    requireAll(require.context("src", true, js("/\\.css$/")))
 
-    render(document.getElementById("root")) {
-        //app()
-        gameUI()
+    val rootDiv = document.getElementById("root")
+
+    render(rootDiv) {
+        app()
+
+//        child(App::class) {
+//
+//        }
+
+//        gameUI()
+
 //        div {
 //            h1 { +"Blackjack" }
 //            div{
@@ -31,6 +39,8 @@ fun main(args: Array<String>) {
 //
 //            }
 //        }
+
+        //app()
     }
 }
 

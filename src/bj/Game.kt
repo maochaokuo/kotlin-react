@@ -1,0 +1,5 @@
+package bj
+
+class Game {
+
+}
