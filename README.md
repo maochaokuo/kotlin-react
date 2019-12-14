@@ -27,8 +27,8 @@
 1. Go to File > Settings (Ctrl+Alt+S).
 2. Go to Appearance & Behavior > System Settings.
 3. Make sure the two are unchecked:
-  a. Save files on frame deactivation
-  b. Save files automatically if application is idle for x sec.
+  * Save files on frame deactivation
+  * Save files automatically if application is idle for x sec.
 4. Go to Editor > General > Editor Tabs
 5. Put a checkmark on "Mark modified files with asterisk"
 6. (Optional but recommended) Under "Tab Closing Policy", select "Close non-modified files first". You may also want to increase the number of allowed tabs.
