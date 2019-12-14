@@ -22,3 +22,14 @@
 5. block comment
   1. Ctrl-/ (toggle selected line comment)
   2. Ctrl-Shift-/ (toggle block comment)
+
+### How to disable auto-save:
+1. Go to File > Settings (Ctrl+Alt+S).
+2. Go to Appearance & Behavior > System Settings.
+3. Make sure the two are unchecked:
+  a. Save files on frame deactivation
+  b. Save files automatically if application is idle for x sec.
+4. Go to Editor > General > Editor Tabs
+5. Put a checkmark on "Mark modified files with asterisk"
+6. (Optional but recommended) Under "Tab Closing Policy", select "Close non-modified files first". You may also want to increase the number of allowed tabs.
+7. Click Apply > OK.

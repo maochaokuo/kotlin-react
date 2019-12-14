@@ -9,6 +9,19 @@ fun main(args: Array<String>) {
     requireAll(require.context("src", true, js("/\\.css$/")))
 
     render(document.getElementById("root")) {
-        app()
+        //app()
+
+        h1{
+            +"Blackjack"
+            div{
+
+                div{
+                    div { b { +"Player Hand" } }
+                    div { +"cards go here"  }
+                    div { b { +"12 Point" } }
+                }
+
+            }
+        }
     }
 }
