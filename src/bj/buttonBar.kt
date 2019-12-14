@@ -13,24 +13,33 @@ import react.dom.div
 import react.dom.h1
 import kotlin.js.js as js1
 
-fun RBuilder.buttonBar( ) {
+interface Eh {
+    fun deal() {}
+    fun hit() {}
+    fun stay() {}
+}
+
+fun RBuilder.buttonBar( eh: Eh) {
     div {
         button {
             +"Deal"
             attrs.onClickFunction = {
                 console.log("d")
+                eh.deal()
             }
         }
         button {
             +"Hit"
             attrs.onClickFunction = {
                 console.log("h")
+                eh.hit()
             }
         }
         button {
             +"Stay"
             attrs.onClickFunction = {
                 console.log("s")
+                eh.stay()
             }
         }
     }

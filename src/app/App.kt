@@ -1,5 +1,6 @@
 package app
 
+import bj.Eh
 import bj.Game
 import bj.gameUI
 import react.*
@@ -20,7 +21,23 @@ class App : RComponent<RProps, AppState>() {
     }
 
     override fun RBuilder.render() {
-        gameUI( state.g )
+        gameUI( state.g , object: Eh {
+            override fun deal(){
+                setState{
+                    g.deal()
+                }
+            }
+            override fun hit(){
+                setState{
+                    g.hit()
+                }
+            }
+            override fun stay(){
+                setState{
+                    g.stay()
+                }
+            }
+        })
 
 //        h1 { +"App" }
 
