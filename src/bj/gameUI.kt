@@ -14,6 +14,7 @@ import kotlin.js.js as js1
 fun RBuilder.gameUI(g: Game ) {
     div {
         h1 { +"Blackjack" }
+        buttonBar()
         div {
 
             attrs.title = "Foo"
