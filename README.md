@@ -6,6 +6,13 @@
 2. (make up from video in KotlinConf 2017 - How to Build a React App in Kotlin by Dave Ford)
 3. from https://play.kotlinlang.org/hands-on/Building Web Applications with React and Kotlin JS/02_Setting_up)
 
+## extract function
+The following steps are about how to extract function from html
+1. select the html segment
+2. right click, choose Refactor then Function
+3. give a name (ex: handUi), and then choose RBuilder type from
+   dropdown combobox 
+
 ## create-react-kotlin-app 
 1. create-react-kotlin-app <my-app> (ex: kotlin-react)
 2. must install JDK 8
@@ -20,8 +27,8 @@
 3. then Ctrl-Alt-K push
 4. Ctrl-S, save all
 5. block comment
-  1. Ctrl-/ (toggle selected line comment)
-  2. Ctrl-Shift-/ (toggle block comment)
+    1. Ctrl-/ (toggle selected line comment)
+    2. Ctrl-Shift-/ (toggle block comment)
 
 ### How to disable auto-save:
 1. Go to File > Settings (Ctrl+Alt+S).

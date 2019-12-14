@@ -5,6 +5,7 @@ import app.*
 import kotlinext.js.*
 import kotlinx.html.style
 import kotlinx.html.title
+import react.RBuilder
 import react.dom.*
 import kotlin.browser.*
 
@@ -22,11 +23,7 @@ fun main(args: Array<String>) {
                     display = "flex"
                 }
 
-                div{
-                    div { b { +"Player Hand" } }
-                    div { +"cards go here"  }
-                    div { b { +"12 Point" } }
-                }
+                handUi()
 
                 div{
                     div { b { +"Dealer Hand" } }
@@ -36,5 +33,13 @@ fun main(args: Array<String>) {
 
             }
         }
+    }
+}
+
+private fun RBuilder.handUi() {
+    div {
+        div { b { +"Player Hand" } }
+        div { +"cards go here" }
+        div { b { +"12 Point" } }
     }
 }
