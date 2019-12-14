@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
 
     val rootDiv = document.getElementById("root")
 
-    render(rootDiv) {
+    render(rootDiv ) {
         app()
 
 //        child(App::class) {

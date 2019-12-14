@@ -12,6 +12,13 @@ The following steps are about how to extract function from html
 2. right click, choose Refactor then Function
 3. give a name (ex: handUi), and then choose RBuilder type from
    dropdown combobox 
+   
+## trouble shooting
+1. 'if react-scripts-kotlin' is not recognized as an 
+    internal or external command, happened, then:
+```
+npm i react-scripts-kotlin --save
+```
 
 ## create-react-kotlin-app 
 1. create-react-kotlin-app <my-app> (ex: kotlin-react)
