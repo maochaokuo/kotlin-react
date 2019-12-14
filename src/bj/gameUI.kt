@@ -21,8 +21,10 @@ fun RBuilder.gameUI() {
                 display = "flex"
             }
 
-            handUI()
-            handUI()
+            handUI("Player", 12)
+            handUI("Dealer", 14)
+//            handUI()
+//            handUI()
 
         }
     }
