@@ -2,6 +2,8 @@
 
 package bj
 
+import kotlinext.js.js
+import kotlinx.html.style
 import kotlinx.html.title
 import react.RBuilder
 import react.dom.b
@@ -14,8 +16,13 @@ fun RBuilder.gameUI() {
         h1 { +"Blackjack" }
         div {
 
-            hangUI()
-            hangUI()
+            attrs.title = "Foo"
+            attrs.style = js {
+                display = "flex"
+            }
+
+            handUI()
+            handUI()
 
         }
     }

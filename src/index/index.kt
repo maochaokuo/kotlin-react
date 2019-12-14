@@ -1,4 +1,5 @@
 @file:Suppress("UnsafeCastFromDynamic")
+
 package index
 
 import app.*
@@ -8,38 +9,42 @@ import kotlinx.html.title
 import react.RBuilder
 import react.dom.*
 import kotlin.browser.*
+import bj.*
 
 fun main(args: Array<String>) {
     requireAll(require.context("src", true, js("/\\.css$/")))
 
     render(document.getElementById("root")) {
         //app()
-        div {
-            h1 { +"Blackjack" }
-            div{
-
-                attrs.title = "Foo"
-                attrs.style = js {
-                    display = "flex"
-                }
-
-                handUi()
-
-                div{
-                    div { b { +"Dealer Hand" } }
-                    div { +"cards go here"  }
-                    div { b { +"14 Point" } }
-                }
-
-            }
-        }
+        gameUI()
+//        div {
+//            h1 { +"Blackjack" }
+//            div{
+//
+//                attrs.title = "Foo"
+//                attrs.style = js {
+//                    display = "flex"
+//                }
+//
+//                handUI("Player", 12)
+//                handUI("Dealer", 14)
+//
+//            }
+//        }
     }
 }
 
-private fun RBuilder.handUi() {
-    div {
-        div { b { +"Player Hand" } }
-        div { +"cards go here" }
-        div { b { +"12 Point" } }
-    }
-}
+
+//                div{
+//                    div { b { +"Dealer Hand" } }
+//                    div { +"cards go here"  }
+//                    div { b { +"14 Point" } }
+//                }
+
+//private fun RBuilder.handUi() {
+//    div {
+//        div { b { +"Player Hand" } }
+//        div { +"cards go here" }
+//        div { b { +"12 Point" } }
+//    }
+//}
