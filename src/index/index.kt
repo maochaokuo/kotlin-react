@@ -1,3 +1,4 @@
+@file:Suppress("UnsafeCastFromDynamic")
 package index
 
 import app.*
@@ -17,7 +18,7 @@ fun main(args: Array<String>) {
             div{
 
                 attrs.title = "Foo"
-                attrs.style = kotlinext.js.js {
+                attrs.style = js {
                     display = "flex"
                 }
 
